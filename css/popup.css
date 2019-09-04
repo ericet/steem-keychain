@@ -73,6 +73,7 @@ body {
 #edit_del_div,
 #token_history_div,
 #confirm_send_div {
+  scrollbar-width: none;
   width: 350px;
   height: 100%;
   box-sizing: border-box;
@@ -1438,6 +1439,7 @@ input:focus {
 
 #list_wit,
 #top100_div {
+  scrollbar-width: none;
   max-height: 290px;
   margin-top: 16px;
   margin-left: -32px;
