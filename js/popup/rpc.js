@@ -1,6 +1,6 @@
 const RPCs = [
-		"https://api.steemit.com",
 		"https://anyx.io",
+		"https://api.steemit.com",
 		"https://rpc.usesteem.com",
     "https://api.steemitdev.com",
     "https://api.steem.house",
