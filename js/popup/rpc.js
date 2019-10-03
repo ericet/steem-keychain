@@ -16,7 +16,7 @@ function loadRPC(local, current_rpc) {
     $("#pref_div .usernames .select-items").remove();
     let listRPC = [];
     listRPC = local != undefined ? JSON.parse(local).concat(RPCs) : RPCs;
-    const currentrpc = current_rpc || "https://api.steemit.com";
+    const currentrpc = current_rpc || "https://anyx.io";
     listRPC = [currentrpc].concat(listRPC.filter((e) => {
         return e != currentrpc
     }));
