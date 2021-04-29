@@ -41,7 +41,7 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResp) {
     if (msg.command == "sendBackMk") {
         chrome.storage.local.get(['accounts', 'current_rpc'], function(items) {
             steem.api.setOptions({
-								url: items.current_rpc || 'https://anyx.io',
+								url: items.current_rpc || 'https://api.steem.buzz',
 								useAppbaseApi: true
             });
             if (items.current_rpc === 'TESTNET') {

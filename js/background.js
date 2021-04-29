@@ -17,8 +17,8 @@ chrome.storage.local.get(['current_rpc', 'autolock'], function(items) {
 
 	steem.api.setOptions({
 			transport: 'http',
-			uri: items.current_rpc || 'https://anyx.io',
-			url: items.current_rpc || 'https://anyx.io',
+			uri: items.current_rpc || 'https://api.steem.buzz',
+			url: items.current_rpc || 'https://api.steem.buzz',
 			useAppbaseApi: true
 	});
     if (items.current_rpc === 'TESTNET') {
@@ -94,7 +94,7 @@ function chromeMessageHandler(msg, sender, sendResp) {
         clearInterval(interval);
     } else if (msg.command == "setRPC") {
         steem.api.setOptions({
-            url: msg.rpc || 'https://anyx.io',
+            url: msg.rpc || 'https://api.steem.buzz',
 						useAppbaseApi: true
         });
         if (msg.rpc === 'TESTNET') {

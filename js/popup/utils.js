@@ -78,7 +78,7 @@ var getRC = function(name) {
   };
   return new Promise(function(fulfill, reject) {
     $.ajax({
-      url: "https://anyx.io",
+      url: "https://api.steem.buzz",
       type: "POST",
       data: JSON.stringify(data),
       success: function(response) {

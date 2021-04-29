@@ -1,12 +1,15 @@
 const RPCs = [
-		"https://anyx.io",
+		"https://api.steem.buzz",
 		"https://api.steemit.com",
-		"https://rpc.usesteem.com",
+		"https://api.steemyy.com",
     "https://api.steemitdev.com",
-    "https://api.steem.house",
-    "https://steemd.minnowsupportproject.org",
-		"https://steemd.privex.io",
-		"https://appbasetest.timcliff.com",
+    "https://steem.ecosynthesizer.com",
+    "https://api.justyy.com",
+		"https://steem.justyy.workers.dev",
+        "https://api.steemzzang.com",
+        "https://steem.61bts.com",
+        "https://api.steem.fans",
+		"https://aksaiapi.wherein.mobi",
     "TESTNET"
 ];
 
@@ -16,7 +19,7 @@ function loadRPC(local, current_rpc) {
     $("#pref_div .usernames .select-items").remove();
     let listRPC = [];
     listRPC = local != undefined ? JSON.parse(local).concat(RPCs) : RPCs;
-    const currentrpc = current_rpc || "https://anyx.io";
+    const currentrpc = current_rpc || "https://api.steem.buzz";
     listRPC = [currentrpc].concat(listRPC.filter((e) => {
         return e != currentrpc
     }));
